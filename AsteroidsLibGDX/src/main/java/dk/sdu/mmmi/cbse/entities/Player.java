@@ -8,7 +8,6 @@ import dk.sdu.mmmi.cbse.main.Game;
 import java.util.ArrayList;
 
 public class Player extends SpaceObject {
-
     protected float[] flamex;
     protected float[] flamey;
 
@@ -49,11 +48,11 @@ public class Player extends SpaceObject {
         this.shooting = false;
 
         this.color = new float[]{1, 1, 1, 1};
-
     }
 
     protected void setShape() {
         float pi = MathUtils.PI;
+
         shapex[0] = x + MathUtils.cos(radians) * 8;
         shapey[0] = y + MathUtils.sin(radians) * 8;
 
@@ -77,7 +76,7 @@ public class Player extends SpaceObject {
         flamey[1] = y + MathUtils.sin(radians - pi) * (6 + acceleratingTimer * 50);
 
         flamex[2] = x + MathUtils.cos(radians + 5 * pi / 6) * 5;
-        flamey[2] = y + MathUtils.cos(radians + 5 * pi / 6) * 5;
+        flamey[2] = y + MathUtils.sin(radians + 5 * pi / 6) * 5;
     }
 
     public void setLeft(boolean b) {
@@ -113,11 +112,10 @@ public class Player extends SpaceObject {
     }
 
     protected void addShot() {
-        this.bullets.add(new Bullet(x, y, radians));
+        this.bullets.add(new Bullet(this.speed, x, y, radians));
     }
 
     public void update(float dt) {
-
         // turning
         if (left) {
             radians += rotationSpeed * dt;
@@ -133,7 +131,7 @@ public class Player extends SpaceObject {
             if (acceleratingTimer > 0.1f) {
                 acceleratingTimer = 0;
             }
-        }else{
+        } else {
             acceleratingTimer = 0;
         }
 
@@ -163,10 +161,8 @@ public class Player extends SpaceObject {
         // Shoot
         this.shoot();
 
-
         // screen wrap
         wrap();
-
     }
 
     public void draw(ShapeRenderer sr) {
@@ -179,12 +175,12 @@ public class Player extends SpaceObject {
 
         sr.begin(ShapeType.Line);
 
+        // Draw ship
         for (int i = 0, j = shapex.length - 1;
                 i < shapex.length;
                 j = i++) {
 
             sr.line(shapex[i], shapey[i], shapex[j], shapey[j]);
-
         }
 
         // draw flames
@@ -198,7 +194,6 @@ public class Player extends SpaceObject {
         }
 
         sr.end();
-
 
         bullets.forEach((bullet -> bullet.draw(sr)));
     }

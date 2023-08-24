@@ -8,6 +8,7 @@ import dk.sdu.mmmi.cbse.managers.GameKeys;
 import dk.sdu.mmmi.cbse.managers.GameStateManager;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class PlayState extends GameState {
 	
@@ -24,7 +25,7 @@ public class PlayState extends GameState {
 	}
 	
 	public void init() {
-
+		
 		this.sr = new ShapeRenderer();
 
 		this.bullets = new ArrayList<Bullet>();
@@ -32,23 +33,19 @@ public class PlayState extends GameState {
 
 		this.player = new Player(this.bullets);
 		this.enemy = new EnemyPlayer(this.enemyBullets);
-		
 	}
 	
 	public void update(float dt) {
-		
 		handleInput();
-
+		
 		this.player.update(dt);
 		this.enemy.update(dt);
 
 		Bullet.bulletsUpdater(bullets, dt);
 		Bullet.bulletsUpdater(enemyBullets, dt);
-		
 	}
 	
 	public void draw() {
-
 		this.player.draw(sr);
 		this.enemy.draw(sr);
 

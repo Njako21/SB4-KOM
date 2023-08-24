@@ -34,7 +34,7 @@ public class GameInputProcessor extends InputAdapter {
 	}
 	
 	public boolean keyUp(int k) {
-		if(k == Keys.UP || k == Keys.W) {
+		if(k == Keys.UP|| k == Keys.W) {
 			GameKeys.setKey(GameKeys.UP, false);
 		}
 		if(k == Keys.LEFT || k == Keys.A) {

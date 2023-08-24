@@ -1,5 +1,7 @@
 package dk.sdu.mmmi.cbse.entities;
 
+import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
 import com.badlogic.gdx.math.MathUtils;
 import dk.sdu.mmmi.cbse.main.Game;
 
@@ -29,7 +31,7 @@ public class EnemyPlayer extends Player {
     }
 
     protected void addShot() {
-        this.bullets.add(new EnemyBullet(x, y, radians));
+        this.bullets.add(new EnemyBullet(this.speed, x, y, radians));
     }
 
     public void update(float dt) {
@@ -38,7 +40,7 @@ public class EnemyPlayer extends Player {
         // random controls
         this.setUp(
                 (MathUtils.sin(totalTime * this.controlSpeedAmplifier + MathUtils.random(0f, 2f)) * this.controlGeneralAmplifier) > MathUtils.random(0.5f, this.controlGeneralAmplifier)
-        );
+                );
         this.setLeft(
                 (MathUtils.sin(totalTime * this.controlRotateAmplifier + MathUtils.random(0f, 2f)) * this.controlGeneralAmplifier) > MathUtils.random(0.8f, this.controlGeneralAmplifier)
         );

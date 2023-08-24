@@ -6,7 +6,7 @@ abstract public class SpaceObject {
 	
 	protected float x;
 	protected float y;
-	
+
 	protected float dx;
 	protected float dy;
 	
@@ -19,6 +19,7 @@ abstract public class SpaceObject {
 	
 	protected float[] shapex;
 	protected float[] shapey;
+
 	protected float[] color;
 	
 	protected void wrap() {

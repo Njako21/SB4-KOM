@@ -6,24 +6,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="CommonEnemy (2)" />
         <module name="CommonEnemy" />
         <module name="Player (1)" />
+        <module name="Collision (3)" />
         <module name="OSGiLaser" />
+        <module name="Enemy (3)" />
         <module name="OSGiCommonEnemy" />
-        <module name="Asteroid (1)" />
         <module name="CommonBullet" />
+        <module name="Asteroid (1)" />
         <module name="OSGiAsteroids" />
-        <module name="OSGiCore" />
         <module name="Asteroid" />
+        <module name="OSGiCore" />
         <module name="Enemy" />
         <module name="AsteroidsNetbeansModules-branding" />
+        <module name="Core (2)" />
         <module name="OSGiCommonBullet" />
         <module name="Common (2)" />
         <module name="AsteroidsLibGDX" />
         <module name="CommonAsteroids (1)" />
         <module name="OSGiCommonAsteroids" />
-        <module name="OSGiLibGDX" />
         <module name="AgeCalculatorSpring" />
+        <module name="OSGiLibGDX" />
         <module name="Core" />
         <module name="CommonEnemy (1)" />
         <module name="Player" />
@@ -31,18 +35,23 @@
         <module name="Collision (2)" />
         <module name="Core (2) (dk.sdu.mmmi.cbse)" />
         <module name="OSGiCommon" />
+        <module name="Common" />
         <module name="DictionaryDemo" />
         <module name="HelloWorld" />
-        <module name="Common" />
         <module name="AsteroidsNetbeansModules-app" />
-        <module name="NBRuntimeExample12-app" />
         <module name="Core (1) (dk.sdu.mmmi.cbse)" />
+        <module name="NBRuntimeExample12-app" />
         <module name="ExtendedDictionary" />
         <module name="Core (1)" />
+        <module name="Common (3)" />
+        <module name="Bullet (2)" />
         <module name="SilentUpdate" />
         <module name="Collision (1)" />
         <module name="Enemy (1)" />
+        <module name="Asteroid (3)" />
         <module name="common" />
+        <module name="Core (4)" />
+        <module name="CommonBullet (2)" />
         <module name="player" />
         <module name="Bullet" />
         <module name="Bullet (1)" />
@@ -53,8 +62,11 @@
         <module name="OSGiAsteroidSplitter" />
         <module name="Asteroid (2)" />
         <module name="GeneralDictionary" />
-        <module name="CommonBullet (1)" />
+        <module name="Core (3)" />
         <module name="Common (1)" />
+        <module name="CommonBullet (1)" />
+        <module name="Player (3)" />
+        <module name="CommonAsteroids (2)" />
         <module name="NBRuntimeExample12-branding" />
         <module name="DictionaryServiceProvider" />
         <module name="AgeCalculatorSpringClient" />
@@ -66,6 +78,7 @@
       <module name="Asteroid" target="9" />
       <module name="Asteroid (1)" target="9" />
       <module name="Asteroid (2)" target="1.8" />
+      <module name="Asteroid (3)" target="9" />
       <module name="asteroids.java9" target="9" />
       <module name="asteroids.serviceloader" target="9" />
       <module name="AsteroidsEntityFramework" target="11" />
@@ -75,29 +88,39 @@
       <module name="AsteroidsNetbeansModules-parent" target="1.5" />
       <module name="Bullet" target="9" />
       <module name="Bullet (1)" target="1.8" />
+      <module name="Bullet (2)" target="9" />
       <module name="Collision" target="9" />
       <module name="Collision (1)" target="9" />
       <module name="Collision (2)" target="1.8" />
+      <module name="Collision (3)" target="9" />
       <module name="Common" target="9" />
       <module name="common" target="9" />
       <module name="Common (1)" target="11" />
       <module name="Common (2)" target="1.8" />
+      <module name="Common (3)" target="9" />
       <module name="CommonAsteroids" target="9" />
       <module name="CommonAsteroids (1)" target="1.8" />
+      <module name="CommonAsteroids (2)" target="9" />
       <module name="CommonBullet" target="9" />
       <module name="CommonBullet (1)" target="1.8" />
+      <module name="CommonBullet (2)" target="9" />
       <module name="CommonEnemy" target="9" />
       <module name="CommonEnemy (1)" target="1.8" />
+      <module name="CommonEnemy (2)" target="9" />
       <module name="compiled-bundle-settings" target="1.8" />
       <module name="Core" target="9" />
       <module name="Core (1)" target="11" />
       <module name="Core (1) (dk.sdu.mmmi.cbse)" target="11" />
+      <module name="Core (2)" target="9" />
       <module name="Core (2) (dk.sdu.mmmi.cbse)" target="1.8" />
+      <module name="Core (3)" target="1.8" />
+      <module name="Core (4)" target="11" />
       <module name="DictionaryDemo" target="1.8" />
       <module name="DictionaryServiceProvider" target="1.8" />
       <module name="Enemy" target="9" />
       <module name="Enemy (1)" target="11" />
       <module name="Enemy (2)" target="1.8" />
+      <module name="Enemy (3)" target="9" />
       <module name="ExtendedDictionary" target="1.8" />
       <module name="GeneralDictionary" target="1.8" />
       <module name="HelloWorld" target="1.8" />
@@ -119,6 +142,7 @@
       <module name="player" target="9" />
       <module name="Player (1)" target="11" />
       <module name="Player (2)" target="1.8" />
+      <module name="Player (3)" target="9" />
       <module name="provision" target="1.8" />
       <module name="ServiceLoaderExample" target="1.5" />
       <module name="shared-plugin-settings" target="1.8" />
