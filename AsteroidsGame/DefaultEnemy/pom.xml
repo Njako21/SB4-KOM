@@ -11,6 +11,12 @@
     <name>DefaultEnemy</name>
     <version>1.0.0</version>
 
+    <!-- Add properties to specify Java version -->
+    <properties>
+        <maven.compiler.source>18</maven.compiler.source>
+        <maven.compiler.target>18</maven.compiler.target>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
